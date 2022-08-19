@@ -24,20 +24,13 @@
     <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
     <div class="post-title">
         <p>
-            服务器开机提示busybox v1.22.1 built-in shell(ash)解决方案
+            Git常用命令
         </p>
         <hr>
     </div>
     <div class="post-content">
-        <p>服务器开机进不去系统报错如下<img src="http://os.657q.com/202208191335169.png" alt="image-20220819133529877"></p>
-<p>网上查了一下原因说硬盘处错误了，解决方法：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">输入命令查看错误分区</span></span><br><span class="line">exit</span><br></pre></td></tr></table></figure>
+        <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git init  //初始化本地仓库</span><br><span class="line">git add -A //添加本地所有文件到仓库        </span><br><span class="line">git commit -m &quot;blog源文件&quot; //添加commit</span><br><span class="line">git branch hexo //添加本地仓库分支hexo</span><br><span class="line">git remote add origin 博客的git地址  //添加远程仓库</span><br><span class="line">git push origin hexo //将本地仓库的源文件推送到远程仓库hexo分支</span><br></pre></td></tr></table></figure>
 
-<p><img src="http://os.657q.com/202208191337917.png" alt="image-20220819133737557"></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">然后使用命令修复出现问题的分区</span></span><br><span class="line">fsck -y /dev/sda2 </span><br></pre></td></tr></table></figure>
-
-<p><img src="http://os.657q.com/202208191338467.png" alt="image-20220819133857076"></p>
-<p>修复完成，重启成功进系统</p>
 
     </div>
 
