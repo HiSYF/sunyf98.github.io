@@ -20,74 +20,30 @@
 <meta name="generator" content="Hexo 6.2.0"></head>
 
 <body id="bodyx">
-    <div class="hd logodiv">
-    <img src="/img/logo.png" class="logopng">
-    <p class="logot"><span class="logo_1">&lt;</span><span class="logo_2">/</span><span class="logo_3">#</span> GEEK 三斤 <span class="logo_3">#</span><span class="logo_2">/</span><span class="logo_1">&gt;</span></p>
-</div>
-<div class="hd">
-    <ol class="breadcrumb">
-        
-            <li><a class="ba" href="/project">作品</a></li>
-        
-            <li><a class="ba" href="/domain">域名</a></li>
-        
-            <li><a class="ba" href="/links">友联</a></li>
-        
-            <li><a class="ba" href="/about">关于</a></li>
-        
-            <li><a class="ba" target="_blank" rel="noopener" href="https://github.com/sanjinhub">Github</a></li>
-        
-    </ol>
-    <hr class="breadcrumbhr">
-</div>
-<div class="hd">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            服务器开机提示busybox v1.22.1 built-in shell(ash)解决方案
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <p>服务器开机进不去系统报错如下<img src="http://os.657q.com/202208191335169.png" alt="image-20220819133529877"></p>
+<p>网上查了一下原因说硬盘处错误了，解决方法：</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">#</span> 输入命令查看错误分区</span><br><span class="line">exit</span><br></pre></td></tr></table></figure>
+
+<p><img src="http://os.657q.com/202208191337917.png" alt="image-20220819133737557"></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">#</span> 然后使用命令修复出现问题的分区</span><br><span class="line">fsck -y /dev/sda2 </span><br></pre></td></tr></table></figure>
+
+<p><img src="http://os.657q.com/202208191338467.png" alt="image-20220819133857076"></p>
+<p>修复完成，重启成功进系统</p>
+
+    </div>
+
     
-    
-        
-        
-            <div class="titlex">
-                <p><span class="jing">#</span>
-                    2022
-                </p>
-            </div>
-            
-        
-        <a class="flink" href="/2022/08/19/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E6%9C%BA%E6%8F%90%E7%A4%BAbusybox%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">
-            <div class="list">
-                <div class="postname">
-                    服务器开机提示busybox v1.22.1 built-in shell(ash)解决方案
-                </div>
-                <div class="posttime">
-                    August 19th
-                </div>
-            </div>
-        </a>
-    
-        
-        
-        <a class="flink" href="/2022/08/19/%E6%B5%8B%E8%AF%95%E7%94%9F%E6%88%90%E6%96%B0%E7%9A%84/">
-            <div class="list">
-                <div class="postname">
-                    测试生成新的2
-                </div>
-                <div class="posttime">
-                    August 19th
-                </div>
-            </div>
-        </a>
-    
-        
-        
-        <a class="flink" href="/2022/08/17/hello-world/">
-            <div class="list">
-                <div class="postname">
-                    Hello World
-                </div>
-                <div class="posttime">
-                    August 17th
-                </div>
-            </div>
-        </a>
+        <hr class="fhr">
+        <div id="vcomments"></div>
     
 </div>
     <div class="footer" id="footer">
