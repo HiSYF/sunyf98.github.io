@@ -12,4 +12,3 @@ git branch hexo //添加本地仓库分支hexo
 git remote add origin 博客的git地址  //添加远程仓库
 git push origin hexo //将本地仓库的源文件推送到远程仓库hexo分支
 ```
-

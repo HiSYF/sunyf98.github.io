@@ -46,8 +46,5 @@ hexo n page "页面名"
 
 ```tex
 # 生成并上传
-hexo d -g 
+hexo d -g
 ```
-
-
-
